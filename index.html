@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Alone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#pro-film">Про фільм</a></li>
+            <li><a href="#personazhi">Персонажі</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+        <button id="theme-toggle">Змінити тему</button>
+    </nav>
+    <header id="home">
+        <div class="header-content">
+            <div class="movie-info-and-buttons">
+                <h1>"Сам удома" (Home Alone)</h1>
+                <p>8-річний Кевін МакКаллістер випадково залишається сам удома, коли його велика родина поспішає на різдвяні канікули до Парижа. Спочатку він насолоджується свободою, але незабаром йому доводиться захищати свій дім від двох недолугих грабіжників.</p>
+                <a href="https://youtu.be/jEDaVHmw7r4?si=mFOacIIe9IeEoWxz" target="_blank" class="button-link">
+                    <button class="button">Дивитись трейлер</button>
+                </a>
+                
+                <a href="https://dai.ly/x97qmrg" target="_blank" class="button-link">
+                    <button class="button">Дивитись повністю</button>
+                </a>
+            </div>
+            <img src="img/img1.jpg" alt="home alone" class="header-img">
+        </div>
+    </header>
+        
+    <div class="movie-description" id="pro-film">
+        <p>Детальніше про сюжет: Різдвяна метушня обертається для Кевіна МакКаллістера несподіваним пригодою. Забутий родиною, він прокидається в порожньому будинку і спочатку радіє абсолютній свободі: їсть морозиво на сніданок, дивиться заборонені фільми та стрибає на ліжку. Проте його безтурботність порушують Марв і Гаррі, відомі як "Мокрі бандити", які вирішили пограбувати будинки на його вулиці. Кевіну доводиться проявити неабияку винахідливість і мужність, щоб перетворити свій дім на справжню фортецю, влаштовуючи пастки та перешкоди для небажаних гостей. Ця різдвяна комедія стала улюбленою для мільйонів глядачів по всьому світу завдяки своєму гумору, теплоті та незабутнім сценам.</p>
+        <div class="movie-details-content">
+            <img class="movie-image" src="img/images-2.png" alt="Сцена з фільму">
+            <div class="info">
+                <p>Рік виходу: <span class="thin">1990</span></p>
+                <p>Жанр: <span class="thin">Сімейна комедія, Різдвяний фільм.</span></p>
+                <p>Тривалість: <span class="thin">1 година 43 хвилини.</span></p>
+                <p>Режисер: <span class="thin">Кріс Коламбус</span></p>
+                <p>Сценарист: <span class="thin">Джон Г'юз</span></p>
+                <p>Країна виробництва: <span class="thin">США</span></p>
+                <p>Кіностудія: <span class="thin">20th Century Fox</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="images-right">
+        <img src="img/images-3.png" alt="Image 1" />
+        <img src="img/images-4.png" alt="Image 2" />
+    </div>
+
+    <section class="characters" id="personazhi">
+        <div class="character">
+            <h2>Кевін МакКаллістер</h2>
+            <p>Актор: Маколей Калкін (Macaulay Culkin)</p>
+            <p>Коротко: 8-річний хлопчик, який випадково залишається один удома на Різдво і змушений захищати свою оселю від грабіжників. Розумний, винахідливий та дуже кмітливий для свого віку.</p>
+        </div>
+        <div class="character">
+            <h2>Гаррі Лайм</h2>
+            <p>Актор: Джо Пеші (Joe Pesci)</p>
+            <p>Коротко: Один з "Мокрих бандитів", досвідчений, але неймовірно невдаха грабіжник. Часто злиться на Марва.</p>
+        </div>
+        <div class="character">
+            <h2>Марв Мерчантс</h2>
+            <p>Актор: Деніел Стерн (Daniel Stern)</p>
+            <p>Коротко: Другий "Мокрий бандит", високий і трохи незграбний. Відзначається тим, що залишає воду у кранах після пограбувань.</p>
+        </div>
+        <div class="character">
+            <h2>Кейт МакКаллістер</h2>
+            <p>Актор: Кетрін О'Хара (Catherine O'Hara)</p>
+            <p>Коротко: Мати Кевіна, яка відчуває величезне почуття провини та відчайдушно намагається повернутися додому до сина.</p>
+        </div>
+        <div class="character">
+            <h2>Пітер МакКаллістер</h2>
+            <p>Актор: Джон Герд (John Heard)</p>
+            <p>Коротко: Батько Кевіна, який також стурбований ситуацією, але залишається більш спокійним.</p>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <p>Контакти: info@homealone.com</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+        body.classList.add('dark-theme');
+
+        toggleButton.addEventListener('click', () => {
+            if (body.classList.contains('dark-theme')) {
+                body.classList.replace('dark-theme', 'light-theme');
+            } else {
+                body.classList.replace('light-theme', 'dark-theme');
+            }
+        });
+    </script>
+</body>
+</html>
